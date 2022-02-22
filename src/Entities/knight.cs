@@ -1,9 +1,11 @@
 public class knight : Hero
 {
-    public knight(string Name, int Level, string heroType) : base(Name, Level, heroType)
-    {
-        this.Name = Name;
-        this.Level = Level;
-        this.heroType = heroType;
-    }
+  public knight(string Name, int Level, string heroType, int MP, int HP) : base(Name, Level, heroType, MP, HP)
+  {
+    this.Name = Name;
+    this.Level = Level;
+    this.heroType = heroType;
+    this.MP = MP;
+    this.HP = HP;
+  }
 }
