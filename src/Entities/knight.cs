@@ -1,8 +1,9 @@
-public class knight : Hero
+namespace JogoRpg.src.Entities
 {
-  public knight(string Name, int Level, string heroType, int MP, int HP) : base(Name, Level, heroType, MP, HP)
+  public class Knight : Hero
   {
-    this.MP = MP;
-    this.HP = HP;
+    public Knight(string name, int level, string heroType, int mP, int hP) : base(name, level, heroType, mP, hP) { }
+
+    public override string Attack() => base.Attack();
   }
 }

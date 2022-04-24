@@ -1,12 +1,17 @@
 ﻿using System;
-class Program
-{
-  public static void Main()
-  {
-    knight arus = new("Arus", 23, "Knight", 500, 100);
-    Wizard wizard = new("Jennica", 23, "White Wizard", 500, 100);
+using JogoRpg.src.Entities;
 
-    Console.WriteLine(wizard.Attack(1));
-    Console.WriteLine(wizard.Attack(7));
+namespace JogoRpg
+{
+  class Program
+  {
+    public static void Main()
+    {
+      Knight arus = new("Arus", 23, "Knight", 500, 100);
+      Wizard wizard = new("Jennica", 23, "White Wizard", 500, 100);
+
+      Console.WriteLine(wizard.Attack(1));
+      Console.WriteLine(wizard.Attack(7));
+    }
   }
 }

@@ -1,21 +1,21 @@
-public class Wizard : Hero
+namespace JogoRpg.src.Entities
 {
-  public Wizard(string Name, int Level, string heroType, int MP, int HP) : base(Name, Level, heroType, MP, HP)
+  public class Wizard : Hero
   {
-    this.MP = MP;
-    this.HP = HP;
-  }
+    public Wizard(string name, int level, string heroType, int mp, int hp) : base(name, level, heroType, mp, hp) { }
 
-  public override string Attack() => $"{this.Name} Lançou Magia.";
-  public string Attack(int Bonus)
-  {
-    if (Bonus > 6)
+    public override string Attack() => $"{Name} Lançou Magia.";
+
+    public string Attack(int Bonus)
     {
-      return $"{this.Name} Lançou Magia super efetiva Com bonus de {Bonus}";
-    }
-    else
-    {
-      return $"{this.Name} Lançou Magia com força franca com bonus de {Bonus}";
+      if (Bonus > 6)
+      {
+        return $"{this.Name} Lançou Magia super efetiva Com bonus de {Bonus}";
+      }
+      else
+      {
+        return $"{this.Name} Lançou Magia com força franca com bonus de {Bonus}";
+      }
     }
   }
 }
